@@ -1,5 +1,11 @@
 # Shell Script
 
+### Reprocessamento de arquivos Loreal
+Antes de importar, deve verificar se os arquivos terminam com .LPN
+`~/scripts/vizzoo_hubly/console`
+```for i in ~/DEMO.SILVANO/mailbox/*.LPN ; do "${JAVA6_HOME}/bin/java" -jar nexxcard-console.jar Processo -p ProcessImportaArquivo -i $i -cnpj 30278428000161 -c 'nexxcard-config.properties' -verbose ; done```
+
+
 ### Quebra lote EE:
 `for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059_* ; do ${TRADUTOR_CMD} /home/skyline/scripts/tradutor/bc/nexgenerico/QuebraLote.bc $i $i.saida@@ ; done`
 
