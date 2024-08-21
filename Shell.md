@@ -2,8 +2,8 @@
 
 ### Reprocessamento de arquivos Loreal
 Antes de importar, deve verificar se os arquivos terminam com .LPN
-`~/scripts/vizzoo_hubly/console`
-```for i in ~/DEMO.SILVANO/mailbox/*.LPN ; do "${JAVA6_HOME}/bin/java" -jar nexxcard-console.jar Processo -p ProcessImportaArquivo -i $i -cnpj 30278428000161 -c 'nexxcard-config.properties' -verbose ; done```
+- Abrir a pasta Vizzo_hubly: `~/scripts/vizzoo_hubly/console`
+- Rodar o for de importação: ```for i in ~/DEMO.SILVANO/mailbox/*.LPN ; do "${JAVA6_HOME}/bin/java" -jar nexxcard-console.jar Processo -p ProcessImportaArquivo -i $i -cnpj 30278428000161 -c 'nexxcard-config.properties' -verbose ; done```
 
 
 ### Quebra lote EE:
