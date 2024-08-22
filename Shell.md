@@ -1,4 +1,4 @@
-# Shell Script
+# Shell
 
 ### Reprocessamento de arquivos Loreal
 Antes de importar, deve verificar se os arquivos terminam com .LPN
