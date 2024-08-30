@@ -49,8 +49,8 @@ A primeira casa é referente as permissões do usuário dono do arquivo, a segun
 
 ### Liberação de arquivos em massa:
 ```
-for cnpj in 1017677490 1077589201​ 1118410480; do
-    for i in ~/CIELO.SEMPV/sent/*$cnpj*; do
+for cnpj in 08698543005600 08698543008897 08698543000993 08698543001299 08698543001450 08698543001965 08698543000136 08698543002856 08698543002937 08698543003402 08698543003232 08698543003909 08698543004557 04315972000800 04315972001017 04315972001106 04315972001360 04315972001521 04315972001874 04315972000630 04315972001440; do
+    for i in ~/OPERADORAS.SEMRELACIONAMENTO/sent/*$cnpj*; do
         mv -v $i /var/spool/nexxera/skyline/recebe/ident/$(basename $i | cut -f1 -d\$);
        sleep 1;
     done;
