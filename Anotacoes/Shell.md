@@ -20,6 +20,9 @@ COMPACTAR: `zip [nome_do_arquivo.zip]`
 DESCOMPACTAR (ZIP): `unzip [nome_do_arquivo.zip]`
 DESCOMPACTAR (GZ): `[nome_do_arquivo.gz]`
 
+### Acessar mapa das operadoras Fiserv (sempre criar backup!!!)
+`cd ~/scripts/lpn/python_cartao/mapas/fiserv`
+
 ### Saber os processos que rodam na cron
 
 `crontab | grep bankweb`
