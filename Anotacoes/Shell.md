@@ -81,147 +81,185 @@ vi Mapa_Clientes_Sodexo
 `~/scripts/bellocard/cartoes/mapas`
 
 ## Shell Script
-
+```
 - É uma sequência lógica de comandos e instruções no Shell
 - Além dos comandos, são utilizadas: Variáveis, instruções lógicas e condicionais
-
+```
 ### Função 
-
+```
 - Automatizar e agilizar atividades
 - Podem ser agendados na cron
 - Cria ferramentas para auxiliar no serviço
 - Aumento na produtividade
-
+```
 ### O Shell
-
+```
 - É a interface entre o usuário e o sistema Linux
 - É um interpretador de instruções
 - Hardware > Kernel > Shell > Usuário
-
+```
 ### Tipos de Shell
-
+```
 Bourne Shell (sh): Shell original e padrão do Unix
 Bourne-Again Shell (bash): Shell padrão no Linux com melhorias
 Korn Shell (ksh): Também é uma melhoria do bourne shell
 C Shell (csh): Traz para o shell recursos na linguagem C
 OBS: echo $0 mostra o shell utilizado
-
+```
 ### Comandos mais utilizados
 
   COMANDO CD
+  ```
     `cd [nome-do-diretório]`
      . -> Diretório atual
      .. ou - -> Diretório anterior
      ~ ou -- -> Diretório home do usuário
      / -> Diretório Raiz
+  ```
 
   COMANDO LS
+  ```
    `ls -[opcoes] [argumento]`
     -l  detalhado
     -t  ordem cronológica (caso não utilize, fica em ordem alfabética)
     -r  ordem inversa
     -a  lista todos os arquivos (inclusive ocultos)
+  ```
 
   COMANDO PS
+  ```
    `ps axu`
     - Mostra todos os processos realizados
+  ```
 
   COMANDO TOUCH
+  ```
    `touch [nome_do_arquivo]`
     - Cria um arquivo zerado (sem conteúdo)
     - Se for utilizado em um arquivo já existente, altera-se apenas o horário de modificação
-
+  ```
 
   COMANDO HELP
+  ```
   `[comando] --help`
     - Informa tudo que pode ser utilizado em um comando
+  ```
 
   COMANDO ECHO
+  ```
    `echo [argumento]`
     - Mostra o argumento desejado na saída
     -n não quebra a linha
     -e reconhce comandos utilizando \
+  ```
 
   COMANDO MKDIR
+  ```
    `mkdir -[opcao] [nome_do_diretorio]`
     - Cria um diretório
     -p Cria toda a árvore do diretório (ex: mkdir -p diretorio1/diretorio2)
+  ```
 
   COMANDO RM
+  ```
    `rm -[opcao] [nome_do_arquivo]`
     - Remove por padrão apenas arquivos
     -r Remove diretórios (para diretórios vazios, pode-se usar rmdir)
     -f Não exibe mensagem de erro
     -v Mostra os arquivos apagados
+   ```
 
   COMANDO SLEEP
+  ```
    `sleep [n]`
     - Conta um tempo n em segundos para a próxima execução
+  ```
 
   COMANDO CAT
+  ```
    `cat [arquivo]`
     - Imprime o conteúdo do arquivo
     -b enumera as linhas com conteúdo
     -n enumera todas as linhas
     -A demonstra os caracteres especiais(tabulações)
+  ```
 
   COMANDO TAC
+  ```
    `tac [arquivo]`
     - Possui a mesma função do CAT, porém lê os arquivos debaixo para cima
+  ```
 
   COMANDO TAIL
+  ```
    `tail -n[n] [arquivo]`
     - Mostra as últimas [n] linhas do arquivo
+  ```
 
   COMANDO HEAD
+  ```
    `head -n[n] [arquivo]`
     - Mostra as [n] primeiras linhas do arquivo
     - o -n pode ser trocado por -c para mostrar os primeiros [n] caracteres
+  ```
 
   COMANDO WC
+  ```
    `wc -[opcao] [arquivo]`
     - Mostra a quantidade da informação desejada
     -l linhas
     -w palavras
     -m caracteres
     -c bytes (normalmente é o mesmo número de caracteres)
+  ```
 
   COMANDO SORT
+  ```
    `sort [arquivo]`
     - Ordena um arquivo em ordem alfabética/numérica
     - sort -r ordena inversamente
     - sort -k[n] utiliza [n] como o índice de ordenação (Ex: Em uma lista com nomes e sobrenomes sort -k2 ordenaria pelos sobrenomes)
     - -t"[delimitador]" informa qual o delimitador dos campos
     - -g é utilizado para ordenar números
+  ```
 
   COMANDO UNIQ
+  ```
    `uniq [arquivo]`
     - Retira informações repetidas que estiverem ordenadas
     - Pode ser misturado com o sort para um melhor funcionamento (sort [arquivo] |uniq
     - -u exclui tudo o que estiver repetido
     - -d mostra apenas o que foi repetido
     - -c mostra quantas vezes a informação foi repetida
+  ```
 
   COMANDO TR
+  ```
    `cat [arquivo] |tr [caractere1] [caractere2]`
     - Troca todos os caracteres 1 por caracteres 2
     - a-z A-Z troca tudo o que for minúsculo por maiúsculo
     - se não for utilizado nenhum caractere2, o caractere1 é deletado
+  ```
 
   COMANDO CUT
+  ```
     `cat [arquivo] | cut -[opcao][n]`
       - Corta itens desejados
       - -c corta caracteres
       - -f corta campos inteiros (palavras)
       - [n]- corta tudo que estiver após esse número
+  ```
 
   COMANDO DIFF
+  ```
    `diff [arquivo1] [arquivo2]`
     - Mostra a diferença entre dois arquivos
     - -w mostra apenas diferenças de conteúdo (sem contar espaços ou tabulações)
     - -r mostra a diferença entre diretórios
+  ```
 
   COMANDO GREP
+  ```
    `grep [conteudo] [arquivo]`
     - Busca um conteúdo dentro de um arquivo
     - Deve-se usar "" quando for uma string com mais de uma palavra
@@ -232,54 +270,74 @@ OBS: echo $0 mostra o shell utilizado
     - -l lista os arquivos que possuem o conteúdo, mas não mostra onde
     - -A[n] mostra n linhas após o conteúdo desejado
     - -B[n] mostra n linhas antes do conteúdo desejado
+  ```
 
   COMANDO SED
+  ```
    `sed '[linha1,[linha2] [opcao]' [arquivo]`
     - Deleta/altera linhas (Ex: sed '1,3 d' arquivo.txt -> deleta da linha 1 à 3 do arquivo.)
     - d é usado para deletar
     - s é usado para substituir
     - /conteúdo para procurar por conteúdo específico
+  ```
 
   COMANDO MORE
+  ```
    `more [arquivo]`
     - Mostra o conteúdo do arquivo de forma mais dinâmica
+  ```
 
   COMANDO LESS
+  ```
    `less [arquivo]`
     - Funciona como o more, porém com mais opções
     - /conteudo para pesquisar (n para a próxima ocorrência)
+  ```
 
   COMANDO FIND
+  ```
    `find /[diretorio] [conteudo]`
     - Procura um conteúdo dentro do arquivo
     - -name Procura pelo nome do arquivo dentro do diretório
+  ```
 
 #### Comandos sequenciais
 
  PIPE (|)
+ ```
    `[comando1] |[comando2]`
     - Usa a saída do primeiro comando como entrada para o segundo
     - Ex: tail -n5 [arquivo] |wc -w (contará o número de caracteres das 5 últimas linhas do arquivo)
+ ```
 
   PONTO E VÍRGULA (;)
+  ```
    `[comando1] ; [comando2]`
     - Executa dois comandos sequencialmente (um após o outro)
     - É diferente do "|" pois os comandos serão executados separadamente
+  ```
 
   &&
+  ```
    `[comando1] && [comando2]`
     - Tem a mesma função do ";", porém só executará o segundo comando se o primeiro funcionar
+  ```
 
   DUPLO PIPE (||)
+  ```
    `[comando1] || [comando2]`
     - Só executará o segundo comando se houver algum erro com o primeiro
+  ```
 
   PARENTESES ()
+  ```
    `(comando)`
     - Abre uma espécie de "sub-shell"
     - Ex: ( cd .. ; ls -l ) -> dará um ls dentro do diretório anterior sem sair do atual
+  ```
 
 ## Redirecionamento ##
+  ```
   - Todo script em Shell possui uma entrada e duas saídas (saída padrão e saída de erro)
   - Entrada = STDIN
   - Saída padrão = STDOUT
@@ -292,8 +350,10 @@ OBS: echo $0 mostra o shell utilizado
   - 2>&1 redireciona o erro para a mesma pasta da saída comum
   - /dev/null é o "buraco negro" das saídas, pode ser usado para ocultar mensagens de erro
   - tr mostra o que foi realizado na entrada
+  ```
 
 ## Variáveis ##
+  ```
   - Podem ser achadas no comando env (ou set, que também reconhece as variáveis não exportadas)
   - É um nome que armaneza um valor
   - $ é utilizado para "chamar" uma variável
@@ -303,11 +363,14 @@ OBS: echo $0 mostra o shell utilizado
   - Quando uma variável é declarada, ela não é gravada. Caso o shell seja fechado, a variável será excluída
   - export é usado para que os processos filhos do processo incial também reconheçam a variável
   - a variável pode ser dada por um comando, utilizado crases HORA=`date +%H`, ou também pode ser utilizado por meio da junção de $ e parênteses MINUTO=$(date +%M)
+  ```
 
 ## Uso das aspas ##
+  ```
   - São usadas principalmente para proteger caracteres especiais
   - "" -> protege todos os caracteres com excessão de: $ ` /
   - '' -> protege TODOS os caracteres
+  ```
 
 ## O VI ##
  vi [arquivo]
