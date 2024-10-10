@@ -77,6 +77,9 @@ cp -pv Mapa_Clientes_Sodexo Mapa_Clientes_Sodexo_18042024_matheus_silvano (inser
 vi Mapa_Clientes_Sodexo
 ```
 
+### Mapa Bellocard (criar backup antes de editar):
+`~/scripts/bellocard/cartoes/mapas`
+
 ## Shell Script
 
 - É uma sequência lógica de comandos e instruções no Shell
