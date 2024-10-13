@@ -80,6 +80,9 @@ vi Mapa_Clientes_Sodexo
 ### Mapa Bellocard (criar backup antes de editar):
 `~/scripts/bellocard/cartoes/mapas`
 
+### Extrair datas de arquivo LPN:
+`for arquivo in ~/DEMO.SILVANO/mailbox/*45543915* ; do echo "Processando arquivo: $arquivo"; grep '^1' "$arquivo" | grep -oE '[0-3][0-9][0-1][0-9]2024'; done`
+
 ## Shell Script
 ```
 - É uma sequência lógica de comandos e instruções no Shell
