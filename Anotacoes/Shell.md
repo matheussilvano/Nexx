@@ -81,7 +81,7 @@ vi Mapa_Clientes_Sodexo
 `~/scripts/bellocard/cartoes/mapas`
 
 ### Extrair datas de arquivo LPN:
-`for arquivo in ~/DEMO.SILVANO/mailbox/*45543915* ; do echo "Processando arquivo: $arquivo"; grep '^1' "$arquivo" | grep -oE '[0-3][0-9][0-1][0-9]2024'; done`
+`for arquivo in ~/.QUARENTENA/mailbox/*BRASILCARD_CARREFOUR* ; do echo "Processando arquivo: $arquivo"; grep '^1' "$arquivo" | grep -oE '[0-3][0-9][0-1][0-9]2024'; done`
 
 ## Shell Script
 ```
