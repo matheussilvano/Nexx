@@ -80,6 +80,12 @@ vi Mapa_Clientes_Sodexo
 ### Mapa Bellocard (criar backup antes de editar):
 `~/scripts/bellocard/cartoes/mapas`
 
+### Liberar arquivos de remessa (TEF):
+#### Tirar "sujeira" se cair em quarentena:
+`for i in *relvenda*; do mv -v $i $(basename $i | cut -f '1' -d '$'); done`
+#### Libera os Arquivos:
+`for i in ~/DEMO.SILVANO/mailbox/*; do /home/skyline/scripts/inte_rvs/Judge /home/skyline/scripts/inte_rvs/judge.cfg INTERSOLID.LEMON $i; sleep 2; done`
+
 ### Extrair datas de arquivo LPN:
 `for arquivo in ~/.QUARENTENA/mailbox/*BRASILCARD_CARREFOUR* ; do echo "Processando arquivo: $arquivo"; grep '^1' "$arquivo" | grep -oE '[0-3][0-9][0-1][0-9]2024'; done`
 
