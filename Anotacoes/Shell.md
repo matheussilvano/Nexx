@@ -14,6 +14,9 @@ Antes de importar, deve verificar se os arquivos terminam com .LPN
 ### Traduz/Importa EE:
 `for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059* ; do /home/skyline/scripts/bankweb/Importador_Extrato_Generico.sh.run $i ; done`
 
+### Traduzir Pix Sicredi:
+`/home/skyline/scripts/lpn/python_cartao/`
+
 ### Compactar/Descompactar arquivos
 
 COMPACTAR: `zip [nome_do_arquivo.zip]`
