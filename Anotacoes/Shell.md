@@ -17,6 +17,12 @@ Antes de importar, deve verificar se os arquivos terminam com .LPN
 ### Traduzir Pix Sicredi:
 `/home/skyline/scripts/lpn/python_cartao/`
 
+### Traduzir Log de Vendas Converter
+`cd ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas`
+```
+python ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas/principal_Generico_Sitef_LpnLogVendas.py ~/DEMO.SILVANO/mailbox/LOGVENDAS_03112024_00000.TEF.original ~/DEMO.SILVANO/mailbox/LOGVENDAS_03112024_00000.TEF.original.LPN
+```
+
 ### Compactar/Descompactar arquivos
 
 COMPACTAR: `zip [nome_do_arquivo.zip]`
