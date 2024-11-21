@@ -31,8 +31,12 @@ for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059* ; do /home/skyline/scripts/bankwe
 ```
 
 ### Traduzir Pix Sicredi:
-`cd /home/skyline/scripts/lpn/python_cartao/`
-`$PYTHON3 /home/skyline/scripts/lpn/python_cartao/principal_lpn_cartao.py sicredi-pix-v1 ~/DEMO.SILVANO/mailbox/PIX_SICREDI_92091891000157_20241104_000000.RET ~/DEMO.SILVANO/mailbox/PIX_SICREDI_92091891000157_20241104_000000.RET.LPN`
+```bash
+cd /home/skyline/scripts/lpn/python_cartao/
+```
+```bash
+$PYTHON3 /home/skyline/scripts/lpn/python_cartao/principal_lpn_cartao.py sicredi-pix-v1 ~/DEMO.SILVANO/mailbox/PIX_SICREDI_92091891000157_20241104_000000.RET ~/DEMO.SILVANO/mailbox/PIX_SICREDI_92091891000157_20241104_000000.RET.LPN
+```
 
 ### Traduzir Log de Vendas Converter
 `cd ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas`
