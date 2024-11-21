@@ -2,7 +2,8 @@
 
 ### Reprocessamento de arquivos Loreal
 Antes de importar, deve verificar se os arquivos terminam com .LPN
-- Copiar os arquivos para a DEMO: ```bash
+- Copiar os arquivos para a DEMO:
+```bash
 cp -pv *br_Transaction_Reports* ~/DEMO.SILVANO/mailbox
 ```
 - Renomear os arquivos: `for i in *br_Transaction_Reports* ; do mv -v $i $(basename $i | cut -f1 -d\$) ; done`
