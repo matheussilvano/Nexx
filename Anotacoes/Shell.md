@@ -9,14 +9,16 @@ Antes de importar, deve verificar se os arquivos terminam com .LPN
 
 
 ### Quebra lote EE:
-`for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059_* ; do ${TRADUTOR_CMD} /home/skyline/scripts/tradutor/bc/nexgenerico/QuebraLote.bc $i $i.saida@@ ; done`
+```bash
+for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059_* ; do ${TRADUTOR_CMD} /home/skyline/scripts/tradutor/bc/nexgenerico/QuebraLote.bc $i $i.saida@@ ; done
+```
 
 ### Traduz/Importa EE:
 `for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059* ; do /home/skyline/scripts/bankweb/Importador_Extrato_Generico.sh.run $i ; done`
 
 ### Traduzir Pix Sicredi:
 `cd /home/skyline/scripts/lpn/python_cartao/`
-`$PYTHON3 /home/skyline/scripts/lpn/python_cartao/principal_lpn_cartao.py sicredi-pix-v1 PIX_SICREDI_92091891000157_20241108_000000.RET PIX_SICREDI_92091891000157_20241108_000000.RET.LPN`
+`$PYTHON3 /home/skyline/scripts/lpn/python_cartao/principal_lpn_cartao.py sicredi-pix-v1 ~/DEMO.SILVANO/mailbox/PIX_SICREDI_92091891000157_20241104_000000.RET ~/DEMO.SILVANO/mailbox/PIX_SICREDI_92091891000157_20241104_000000.RET.LPN`
 
 ### Traduzir Log de Vendas Converter
 `cd ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas`
