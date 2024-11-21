@@ -102,8 +102,8 @@ find ~/OPERADORAS.SEMRELACIONAMENTO/sent ~/.QUARENTENA/mailbox ~/CIELO.SEMPV/sen
 
 ### Liberação de arquivos em massa:
 ```bash
-for cnpj in 92071227 92071239 92071244 92071256 92071260 92071263 92071265 92071272 92071275; do
-    for i in ~/OPERADORAS.SEMRELACIONAMENTO/sent/*$cnpj*; do
+for cnpj in 6000150566 6000150539 6000150533 6000150532 6000148772; do
+    for i in ~/ALELO.SEMPV/sent/*$cnpj*; do
         mv -v $i /var/spool/nexxera/skyline/recebe/ident/$(basename $i | cut -f1 -d\$);
        sleep 1;
     done;
