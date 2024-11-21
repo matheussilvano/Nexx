@@ -48,20 +48,32 @@ python ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas/principal_Generico
 
 ### Compactar/Descompactar arquivos
 
-COMPACTAR: `zip [nome_do_arquivo.zip]`
-DESCOMPACTAR (ZIP): `unzip [nome_do_arquivo.zip]`
+COMPACTAR: 
+```bash
+zip [nome_do_arquivo.zip]
+```
+DESCOMPACTAR (ZIP): 
+```bash
+unzip [nome_do_arquivo.zip]
+```
 DESCOMPACTAR (GZ): `[nome_do_arquivo.gz]`
 
 ### Acessar mapa das operadoras Fiserv (sempre criar backup!!!)
-`cd ~/scripts/lpn/python_cartao/mapas/fiserv`
+```bash
+cd ~/scripts/lpn/python_cartao/mapas/fiserv
+```
 
 ### Saber os processos que rodam na cron
 
-`crontab | grep bankweb`
+```bash
+crontab | grep bankweb
+```
 
 ### Visualizar o conteúdo do arquivo
 
+```bash
 `less [arquivo]`
+```
 
 ### Logar com outro usuário
 
