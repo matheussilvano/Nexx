@@ -412,8 +412,8 @@ OBS: echo $0 mostra o shell utilizado
   - Saída padrão = `STDOUT`
   - Saída de erro = `STDERR`
   - Normalmente ambas as saídas são apresentadas na tela, porém podem ser redirecionadas
-  - > Cria um novo arquivo com a saída desejada (caso já haja algo no arquivo, tudo será excluído)
-  - >> Tem a mesma função do >, porém caso já haja conteúdo no arquivo, será incluído embaixo
+  - \> Cria um novo arquivo com a saída desejada (caso já haja algo no arquivo, tudo será excluído)
+  - \>\> Tem a mesma função do >, porém caso já haja conteúdo no arquivo, será incluído embaixo
   - Para redirecionar uma mensagem de erro, usa-se 2> ou 2>>
   - Ex: `ls -l arquivo.txt > log.out 2> log-erro.out` (caso dê certo irá para log.out, caso haja erro, irá para log-erro.out)
   - `2>&1` redireciona o erro para a mesma pasta da saída comum
