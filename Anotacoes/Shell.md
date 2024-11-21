@@ -26,7 +26,9 @@ for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059_* ; do ${TRADUTOR_CMD} /home/skyli
 ```
 
 ### Traduz/Importa EE:
-`for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059* ; do /home/skyline/scripts/bankweb/Importador_Extrato_Generico.sh.run $i ; done`
+```bash
+for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059* ; do /home/skyline/scripts/bankweb/Importador_Extrato_Generico.sh.run $i ; done
+```
 
 ### Traduzir Pix Sicredi:
 `cd /home/skyline/scripts/lpn/python_cartao/`
