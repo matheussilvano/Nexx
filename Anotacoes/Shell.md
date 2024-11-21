@@ -6,9 +6,18 @@ Antes de importar, deve verificar se os arquivos terminam com .LPN
 ```bash
 cp -pv *br_Transaction_Reports* ~/DEMO.SILVANO/mailbox
 ```
-- Renomear os arquivos: `for i in *br_Transaction_Reports* ; do mv -v $i $(basename $i | cut -f1 -d\$) ; done`
-- Abrir a pasta Vizzo_hubly: `~/scripts/vizzoo_hubly/console`
-- Rodar o for de importação: ```for i in ~/DEMO.SILVANO/mailbox/*.LPN ; do "${JAVA6_HOME}/bin/java" -jar nexxcard-console.jar Processo -p ProcessImportaArquivo -i $i -cnpj 30278428000161 -c 'nexxcard-config.properties' -verbose ; done```
+- Renomear os arquivos:
+```bash
+for i in *br_Transaction_Reports* ; do mv -v $i $(basename $i | cut -f1 -d\$) ; done
+```
+- Abrir a pasta Vizzo_hubly:
+```bash
+~/scripts/vizzoo_hubly/console
+```
+- Rodar o for de importação:
+```bash
+for i in ~/DEMO.SILVANO/mailbox/*.LPN ; do "${JAVA6_HOME}/bin/java" -jar nexxcard-console.jar Processo -p ProcessImportaArquivo -i $i -cnpj 30278428000161 -c 'nexxcard-config.properties' -verbose ; done
+```
 
 
 ### Quebra lote EE:
