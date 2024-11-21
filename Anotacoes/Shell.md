@@ -15,7 +15,8 @@ Antes de importar, deve verificar se os arquivos terminam com .LPN
 `for i in ~/DEMO.SILVANO/mailbox/EXT_341_99059* ; do /home/skyline/scripts/bankweb/Importador_Extrato_Generico.sh.run $i ; done`
 
 ### Traduzir Pix Sicredi:
-`/home/skyline/scripts/lpn/python_cartao/`
+`cd /home/skyline/scripts/lpn/python_cartao/`
+`$PYTHON3 /home/skyline/scripts/lpn/python_cartao/principal_lpn_cartao.py sicredi-pix-v1 PIX_SICREDI_92091891000157_20241108_000000.RET PIX_SICREDI_92091891000157_20241108_000000.RET.LPN`
 
 ### Traduzir Log de Vendas Converter
 `cd ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas`
