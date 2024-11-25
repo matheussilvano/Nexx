@@ -19,6 +19,11 @@ for i in *br_Transaction_Reports* ; do mv -v $i $(basename $i | cut -f1 -d\$) ; 
 for i in ~/DEMO.SILVANO/mailbox/*.LPN ; do "${JAVA6_HOME}/bin/java" -jar nexxcard-console.jar Processo -p ProcessImportaArquivo -i $i -cnpj 30278428000161 -c 'nexxcard-config.properties' -verbose ; done
 ```
 
+### Localizar Ecs que chegaram
+```bash
+for ec in ec1 ec2 ec3; do grep -q "$ec" cielo* && echo -e "\033[0;32m$ec - Encontrado\033[0m" || echo -e "\033[0;31m$ec - Não encontrado\033[0m"; done
+```
+
 
 ### Quebra lote EE:
 ```bash
