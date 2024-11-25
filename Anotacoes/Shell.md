@@ -21,7 +21,7 @@ for i in ~/DEMO.SILVANO/mailbox/*.LPN ; do "${JAVA6_HOME}/bin/java" -jar nexxcar
 
 ### Localizar Ecs que chegaram
 ```bash
-for ec in ec1 ec2 ec3; do grep -q "$ec" cielo* && echo -e "\033[0;32m$ec - Encontrado\033[0m" || echo -e "\033[0;31m$ec - Não encontrado\033[0m"; done
+for ec in 24608220 83778942 85788430 85788449 85788457 85788465 85788473 85788481 85807427 86324683 93547277 96644028 96644044; do grep -q "$ec" * && echo -e "\033[0;32m$ec - Encontrado\033[0m" || echo -e "\033[0;31m$ec - Não encontrado\033[0m"; done
 ```
 
 
