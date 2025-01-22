@@ -48,7 +48,7 @@ $PYTHON3 /home/skyline/scripts/lpn/python_cartao/principal_lpn_cartao.py sicredi
 cd ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas
 ```
 ```bash
-python ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas/principal_Generico_Sitef_LpnLogVendas.py ~/DEMO.SILVANO/mailbox/LOGVENDAS_03112024_00000.TEF.original ~/DEMO.SILVANO/mailbox/LOGVENDAS_03112024_00000.TEF.original.LPN
+for i in ~/DEMO.SILVANO/mailbox/log* ; do [ -f "$i" ] && python  ${SCRIPTS_DIR}/python/generico/cartoes_sitef_logvendas/principal_Generico_Sitef_LpnLogVendas.py "$i" "${i}.LPN"; done
 ```
 
 ### Compactar/Descompactar arquivos
