@@ -74,6 +74,7 @@ ps -aux | grep nexxcard
 ```
 <br>
 Saída:
+
 ```bash
 skyline  18946  0.2  0.0  66712  2036 ?        S    07:39   0:00 /bin/bash nome_do_processo
 ```
