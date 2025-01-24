@@ -68,10 +68,44 @@ DESCOMPACTAR (GZ): `[nome_do_arquivo.gz]`
 cd ~/scripts/lpn/python_cartao/mapas/fiserv
 ```
 
+### Verificar processos em execução
+```bash
+ps -aux | grep nexxcard
+```
+<br>
+Saída:
+```bash
+skyline  18946  0.2  0.0  66712  2036 ?        S    07:39   0:00 /bin/bash nome_do_processo
+```
+
+O segundo número (18946 nesse caso), é o PID, para matar um processo:
+```bash
+kill PID
+```
+
+### Grep com dois parâmetros
+X ou Y:
+```bash
+cat arquivo | grep -E "palavra1|palavra2"
+```
+X e Y:
+```bash
+cat *Bancaria.csv | grep 03100513000758| grep Sodexo
+```
+
+### Quebrar Log de Vendas por operadora:
+```bash
+cd /home/skyline/scripts/nexxcard/console/python/
+```
+
+```bash
+python filtrarTransacaoPorOperadora.py <cod_operadora> <arquivo>
+```
+
 ### Saber os processos que rodam na cron
 
 ```bash
-crontab | grep bankweb
+crontab | grep -i bankweb
 ```
 
 ### Visualizar o conteúdo do arquivo
