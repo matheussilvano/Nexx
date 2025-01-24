@@ -109,6 +109,16 @@ python filtrarTransacaoPorOperadora.py <cod_operadora> <arquivo>
 crontab | grep -i bankweb
 ```
 
+### Alterar informação no Header do arquivo (Sempre deve ter a mesma quantidade de caracteres)
+```bash
+for i in 05_* ; do sed -i '1s/CIELO/CIELA/' $i ; done
+```
+
+### Extrair Pontos de venda dos arquivos traduzidos (LPN)
+```bash
+for i in ~/implantacao/DEMO.SILVANO/mailbox/BAHAMAS/TRADUZIDOS/* ; do /home/skyline/scripts/thyagos/extrair_pv_arquivo_lpn.sh.run $i ; done
+```
+
 ### Visualizar o conteúdo do arquivo
 
 ```bash
@@ -119,6 +129,18 @@ crontab | grep -i bankweb
 
 ```bash
 su - [usuario]
+```
+### Acessar uma "Sreen"
+```bash
+sudo su - skyline          ***
+screen                     ***
+Cannot open your terminal '/dev/pts/0' - please check. ***Tentei acessar mas não tem permissão, aparece a mensagem e a porta
+exit                       *** Encerro a sessão do skyline
+chmod 1777 /dev/pts/0      *** Consedo a permissão do meu usuário para a porta da mensagem
+sudo su - skyline          *** Logo novamente no skyline
+screen                     *** Para acessar agora com a permissão
+ctr+a+d                    *** Para sair do screen
+screen -r                  *** Para voltar para screen
 ```
 
 ### Mover ou renomear arquivo
