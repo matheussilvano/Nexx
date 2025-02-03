@@ -1,5 +1,10 @@
 # Shell
 
+### Ver histórico de alguém:
+```bash
+cat ~/.history/alexandre.andrade/.history_skyline\:alexandre.andrade
+```
+
 ### Reprocessamento de arquivos Loreal
 Antes de importar, deve verificar se os arquivos terminam com .LPN
 - Copiar os arquivos para a DEMO:
