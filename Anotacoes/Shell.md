@@ -73,7 +73,7 @@ unzip [nome_do_arquivo.zip]
 ```
 DESCOMPACTAR (GZ): `[nome_do_arquivo.gz]`
 
-### Acessar mapa das operadoras Fiserv (sempre criar backup!!!)
+### Acessar mapa das operadoras Fiserv **NOVO** (sempre criar backup!!!)
 ```bash
 cd ~/scripts/lpn/python_cartao/mapas/fiserv
 ```
