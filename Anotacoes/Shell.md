@@ -10,6 +10,11 @@ cat ~/.history/alexandre.andrade/.history_skyline\:alexandre.andrade
 ~/scripts/sup3n/Grade.sh.run CAIXA.POSTAL YYYYMMDD
 ```
 
+### Mapas Fiserv **CONVERTER**:
+```bash
+~/scripts/python/generico/cartoes_sitef_logvendas/mapas
+```
+
 ### Reprocessamento de arquivos Loreal
 Antes de importar, deve verificar se os arquivos terminam com .LPN
 - Copiar os arquivos para a DEMO:
