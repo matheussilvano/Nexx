@@ -5,6 +5,11 @@
 cat ~/.history/alexandre.andrade/.history_skyline\:alexandre.andrade
 ```
 
+### Acessar grade de comunicação:
+```bash
+~/scripts/sup3n/Grade.sh.run CAIXA.POSTAL YYYYMMDD
+```
+
 ### Reprocessamento de arquivos Loreal
 Antes de importar, deve verificar se os arquivos terminam com .LPN
 - Copiar os arquivos para a DEMO:
