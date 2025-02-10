@@ -1,5 +1,10 @@
 # Shell
 
+### Ver alterações/execuções de um Script
+```
+~/scripts/sup3n/BuscaNEW.sh.run walmart_captura_log_vendas_veloce.sh
+```
+
 ### Ver histórico de alguém:
 ```bash
 cat ~/.history/alexandre.andrade/.history_skyline\:alexandre.andrade
