@@ -1,5 +1,10 @@
 # Shell
 
+### Mover arquivos pra sent na chamada manager
+```bash
+/home/skyline/scripts/generico/Generico_Move_Retornos.sh &F BIQCARD.RETORNOS sent
+```
+
 ### Ver alterações/execuções de um Script
 ```
 ~/scripts/sup3n/BuscaNEW.sh.run walmart_captura_log_vendas_veloce.sh
