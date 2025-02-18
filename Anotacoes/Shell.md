@@ -1,5 +1,17 @@
 # Shell
 
+### JAR para liberar remessa (Log de Vendas)
+
+- Abrir a console
+```bash
+cd "${SCRIPTS_DIR}/vizzoo_hubly/console/"
+```
+- Rodar o Jar
+```bash
+for i in ~/DEMO.SILVANO/mailbox/* ; do "${JAVA6_HOME}/bin/java" -jar nexxcard-console.jar Processo -p ProcessImportaArquivo -i $i -cnpj '16577631000299' -c 'nexxcard-config.properties' -verbose ; done
+```
+- OBS: Só funciona com Log de Vendas gerado no padrão da Nexxera, não para converter.
+
 ### Mover arquivos pra sent na chamada manager
 ```bash
 /home/skyline/scripts/generico/Generico_Move_Retornos.sh &F BIQCARD.RETORNOS sent
