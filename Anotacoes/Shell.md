@@ -128,6 +128,9 @@ ps -aux | grep nexxcard
 ```bash
 /home/skyline/debug
 ```
+```bash
+grep -l nome_do_arquivo DDMM.HH*
+```
 
 <br>
 Saída:
