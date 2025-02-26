@@ -1,5 +1,19 @@
 # Shell
 
+### Processos que rodam na CRON:
+- Conciliação de 1° nível:
+```bash
+/home/skyline/scripts/generico/cartoes/Executa_Processos_Agendados.sh.run vizzoo_hubly
+```
+- Gerador de relatórios:
+```bash
+/home/skyline/scripts/generico/cartoes/Gerador_Relatorios.sh.run vizzoo_hubly
+```
+- Operações web:
+```bash
+/home/skyline/scripts/vizzoo/console/ExecutaOperacoesWebVizzoo.sh.run vizzoo_hubly
+```
+
 ### JAR para liberar remessa (Log de Vendas)
 
 - Abrir a console
@@ -109,6 +123,12 @@ cd ~/scripts/lpn/python_cartao/mapas/fiserv
 ```bash
 ps -aux | grep nexxcard
 ```
+
+### Debug
+```bash
+/home/skyline/debug
+```
+
 <br>
 Saída:
 
@@ -118,8 +138,13 @@ skyline  18946  0.2  0.0  66712  2036 ?        S    07:39   0:00 /bin/bash nome_
 
 O segundo número (18946 nesse caso), é o PID, para matar um processo:
 ```bash
-kill PID
+kill -9 PID
 ```
+Para remover o Lock:
+```bash
+~/scripts/sup3n/Remover_lock_de_memoria.sh.run PID
+```
+
 
 ### Grep com dois parâmetros
 X ou Y:
