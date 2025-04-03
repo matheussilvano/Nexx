@@ -1,5 +1,12 @@
 # Shell
 
+### Fluxo de tradução da Pardini - Getnet
+```bash
+awk 'NR==1 || (!/^0/ && !/^9/) {print} /^9/ {last=$0} END {if (last) print last}' *.RET > concatenados_getnet.txt
+```
+```bash
+$PYTHON3 ~/scripts/traducao/fleury-cartao/principal_fleury_cartao.py getnet-v10 baixa-accestage concatenados_getnet.txt GETNET_PARDINI_20250327_0001.txt
+```
 ### Processos que rodam na CRON:
 - Conciliação de 1° nível:
 ```bash
